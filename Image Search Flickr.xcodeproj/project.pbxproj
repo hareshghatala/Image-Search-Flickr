@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCF8B1C62947561E007B2A39 /* Image_Search_FlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1C52947561E007B2A39 /* Image_Search_FlickrTests.swift */; };
 		CCF8B1D02947561E007B2A39 /* Image_Search_FlickrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1CF2947561E007B2A39 /* Image_Search_FlickrUITests.swift */; };
 		CCF8B1D22947561E007B2A39 /* Image_Search_FlickrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1D12947561E007B2A39 /* Image_Search_FlickrUITestsLaunchTests.swift */; };
 		CCF8B1E029475986007B2A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B1B72947561E007B2A39 /* Assets.xcassets */; };
@@ -27,6 +26,8 @@
 		CCF8B20129477050007B2A39 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B20029477050007B2A39 /* Service.swift */; };
 		CCF8B204294770C0007B2A39 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */; };
 		CCF8B206294770F6007B2A39 /* URLSession+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B205294770F6007B2A39 /* URLSession+Handler.swift */; };
+		CCF8B20A2947A903007B2A39 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B2092947A903007B2A39 /* MockService.swift */; };
+		CCF8B20C2947A94F007B2A39 /* LendingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B20B2947A94F007B2A39 /* LendingViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 		CCF8B1BA2947561E007B2A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCF8B1BC2947561E007B2A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF8B1C12947561E007B2A39 /* Image Search FlickrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Search FlickrTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCF8B1C52947561E007B2A39 /* Image_Search_FlickrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrTests.swift; sourceTree = "<group>"; };
 		CCF8B1CB2947561E007B2A39 /* Image Search FlickrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Search FlickrUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF8B1CF2947561E007B2A39 /* Image_Search_FlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITests.swift; sourceTree = "<group>"; };
 		CCF8B1D12947561E007B2A39 /* Image_Search_FlickrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		CCF8B20029477050007B2A39 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 		CCF8B205294770F6007B2A39 /* URLSession+Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Handler.swift"; sourceTree = "<group>"; };
+		CCF8B2092947A903007B2A39 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		CCF8B20B2947A94F007B2A39 /* LendingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,8 @@
 		CCF8B1C42947561E007B2A39 /* Image Search FlickrTests */ = {
 			isa = PBXGroup;
 			children = (
-				CCF8B1C52947561E007B2A39 /* Image_Search_FlickrTests.swift */,
+				CCF8B2072947A8D4007B2A39 /* MockClass */,
+				CCF8B2082947A8DF007B2A39 /* ViewModelTests */,
 			);
 			path = "Image Search FlickrTests";
 			sourceTree = "<group>";
@@ -230,6 +233,22 @@
 				CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CCF8B2072947A8D4007B2A39 /* MockClass */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8B2092947A903007B2A39 /* MockService.swift */,
+			);
+			path = MockClass;
+			sourceTree = "<group>";
+		};
+		CCF8B2082947A8DF007B2A39 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8B20B2947A94F007B2A39 /* LendingViewModelTests.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF8B1C62947561E007B2A39 /* Image_Search_FlickrTests.swift in Sources */,
+				CCF8B20C2947A94F007B2A39 /* LendingViewModelTests.swift in Sources */,
+				CCF8B20A2947A903007B2A39 /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
