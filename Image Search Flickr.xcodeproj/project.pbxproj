@@ -16,6 +16,7 @@
 		CCF8B1E4294759A0007B2A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1B02947561C007B2A39 /* SceneDelegate.swift */; };
 		CCF8B1E729475B5E007B2A39 /* Lending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B1B42947561C007B2A39 /* Lending.storyboard */; };
 		CCF8B1E829475B66007B2A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1B22947561C007B2A39 /* ViewController.swift */; };
+		CCF8B1EB29476B27007B2A39 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CCF8B1CB2947561E007B2A39 /* Image Search FlickrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Search FlickrUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF8B1CF2947561E007B2A39 /* Image_Search_FlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITests.swift; sourceTree = "<group>"; };
 		CCF8B1D12947561E007B2A39 /* Image_Search_FlickrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CCF8B1DE294757A1007B2A39 /* AppSettings */,
 				CCF8B1DF294757EA007B2A39 /* Resource */,
 				CCF8B1E629475ACA007B2A39 /* View */,
+				CCF8B1E929476B05007B2A39 /* Helper */,
 			);
 			path = "Image Search Flickr";
 			sourceTree = "<group>";
@@ -145,10 +148,18 @@
 		CCF8B1E629475ACA007B2A39 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CCF8B1B22947561C007B2A39 /* ViewController.swift */,
 				CCF8B1B42947561C007B2A39 /* Lending.storyboard */,
+				CCF8B1B22947561C007B2A39 /* ViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CCF8B1E929476B05007B2A39 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 			files = (
 				CCF8B1E829475B66007B2A39 /* ViewController.swift in Sources */,
 				CCF8B1E3294759A0007B2A39 /* AppDelegate.swift in Sources */,
+				CCF8B1EB29476B27007B2A39 /* ProgressHUD.swift in Sources */,
 				CCF8B1E4294759A0007B2A39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
