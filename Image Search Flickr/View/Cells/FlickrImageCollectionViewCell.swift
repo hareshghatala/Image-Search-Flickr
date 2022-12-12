@@ -25,11 +25,4 @@ class FlickrImageCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func setupCellData(photoItem: PhotoItem, index: Int) {
-        self.setupBackgroundColor(index: index)
-        if let imgUrl = photoItem.generateImageURL() {
-            self.imageView.load(urlStr: imgUrl)
-        }
-    }
-    
 }

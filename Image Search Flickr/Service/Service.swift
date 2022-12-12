@@ -72,7 +72,7 @@ class Service {
         }
         
         print("Request Url: \(url.absoluteString)")
-        urlSession.dataTask(with: url) { result in
+        urlSession.dataTask(with: url, result: { result in
             switch result {
                 case .success(let (response, data)):
                     guard let statusCode = (response as? HTTPURLResponse)?.statusCode, 200..<299 ~= statusCode else {
@@ -95,7 +95,7 @@ class Service {
                         completion(.failure(.apiError))
                     }
             }
-        }.resume()
+        }).resume()
     }
     
     

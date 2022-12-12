@@ -63,7 +63,10 @@ extension LendingViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: flickrFeedCellId, for: indexPath) as! FlickrImageCollectionViewCell
         
-        cell.setupCellData(photoItem: viewModel.imageList[indexPath.item], index: indexPath.item)
+        cell.setupBackgroundColor(index: indexPath.item)
+        if let imgUrl = viewModel.imageList[indexPath.item].generateImageURL() {
+            cell.imageView.load(urlStr: imgUrl)
+        }
         
         return cell
     }

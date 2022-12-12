@@ -30,16 +30,15 @@ extension UIImageView {
         guard let url = URL(string: urlStr) else { return }
         
         DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, urlResponse, error) in
+                if let data = data, let image = UIImage(data: data) {
                     ImageCache.shared.cache.setObject(image, forKey: urlStr as NSString)
                     DispatchQueue.main.async {
                         self?.image = image
                     }
                 }
-            }
+            }).resume()
         }
-        
     }
     
 }
