@@ -17,6 +17,8 @@
 		CCF8B1E729475B5E007B2A39 /* Lending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B1B42947561C007B2A39 /* Lending.storyboard */; };
 		CCF8B1E829475B66007B2A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1B22947561C007B2A39 /* ViewController.swift */; };
 		CCF8B1EB29476B27007B2A39 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */; };
+		CCF8B1F129476E22007B2A39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B1F029476E22007B2A39 /* Constants.swift */; };
+		CCF8B204294770C0007B2A39 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		CCF8B1CF2947561E007B2A39 /* Image_Search_FlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITests.swift; sourceTree = "<group>"; };
 		CCF8B1D12947561E007B2A39 /* Image_Search_FlickrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Search_FlickrUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		CCF8B1F029476E22007B2A39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				CCF8B1DE294757A1007B2A39 /* AppSettings */,
 				CCF8B1DF294757EA007B2A39 /* Resource */,
 				CCF8B1E629475ACA007B2A39 /* View */,
+				CCF8B202294770A7007B2A39 /* Extension */,
 				CCF8B1E929476B05007B2A39 /* Helper */,
 			);
 			path = "Image Search Flickr";
@@ -157,9 +162,18 @@
 		CCF8B1E929476B05007B2A39 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CCF8B1F029476E22007B2A39 /* Constants.swift */,
 				CCF8B1EA29476B27007B2A39 /* ProgressHUD.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		CCF8B202294770A7007B2A39 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8B203294770C0007B2A39 /* UIImageView+WebImage.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +311,8 @@
 				CCF8B1E3294759A0007B2A39 /* AppDelegate.swift in Sources */,
 				CCF8B1EB29476B27007B2A39 /* ProgressHUD.swift in Sources */,
 				CCF8B1E4294759A0007B2A39 /* SceneDelegate.swift in Sources */,
+				CCF8B206294770F6007B2A39 /* URLSession+Handler.swift in Sources */,
+				CCF8B1F129476E22007B2A39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
